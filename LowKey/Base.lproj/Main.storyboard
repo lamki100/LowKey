@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LowKey" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,333 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LowKey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t4-np-geL">
+                                <rect key="frame" x="188" y="117" width="225" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr8-UD-fTE">
+                                <rect key="frame" x="243" y="271" width="115" height="30"/>
+                                <state key="normal" title="Advice"/>
+                                <connections>
+                                    <segue destination="bqv-fY-ciO" kind="show" id="SPe-7a-0HA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGU-24-Ygk">
+                                <rect key="frame" x="191" y="399" width="219" height="30"/>
+                                <state key="normal" title="Help Now"/>
+                                <connections>
+                                    <segue destination="cKH-Bk-SMr" kind="show" id="sTK-vf-2Ah"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xr8-UD-fTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ogj-I3-V0j"/>
+                            <constraint firstItem="0t4-np-geL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pFq-tp-4iJ"/>
+                            <constraint firstItem="dGU-24-Ygk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tpg-Ox-dtf"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="402" y="512"/>
+        </scene>
+        <!--Interactive Menu View Controller-->
+        <scene sceneID="rna-3n-PKK">
+            <objects>
+                <viewController id="pYn-o0-Al5" customClass="InteractiveMenuViewController" customModule="LowKey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4yz-Sd-Jpp"/>
+                        <viewControllerLayoutGuide type="bottom" id="oWu-bl-dch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wtw-UE-phJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interactive Menu with big buttons page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpM-H8-u8h">
+                                <rect key="frame" x="199" y="86" width="203" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rH-Rv-xfw">
+                                <rect key="frame" x="116" y="210" width="90" height="43"/>
+                                <state key="normal" title="Button 1"/>
+                                <connections>
+                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="y41-1A-yUJ"/>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="jSw-Qn-DY5"/>
+                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="HIM-pV-ivc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTP-ec-hZr">
+                                <rect key="frame" x="394" y="210" width="90" height="43"/>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="ykp-HM-s77"/>
+                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="RZ7-Ba-YN6"/>
+                                    <action selector="secondInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="oFO-E6-KmB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-kJ-5XS">
+                                <rect key="frame" x="394" y="413" width="90" height="43"/>
+                                <state key="normal" title="Button 4"/>
+                                <connections>
+                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="bKs-xP-nq0"/>
+                                    <action selector="fourthInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="Uv2-cH-aOl"/>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="h2B-Py-wJ2"/>
+                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="Bgy-n5-f3H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A98-x6-bVx">
+                                <rect key="frame" x="116" y="413" width="90" height="43"/>
+                                <state key="normal" title="Button 3"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="x40-xh-XUn"/>
+                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="TMA-tF-NTN"/>
+                                    <action selector="thirdInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="38u-8C-gLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N49-qe-eDZ">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="ECF-Nr-VzP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Bg7-pF-Va4">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="L21-Xe-gf5"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jR-uz-eN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="1223"/>
+        </scene>
+        <!--Info Menu View Controller-->
+        <scene sceneID="usq-uP-bQI">
+            <objects>
+                <viewController id="eYh-Dy-HUg" customClass="InfoMenuViewController" customModule="LowKey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nhq-5P-HfU"/>
+                        <viewControllerLayoutGuide type="bottom" id="VVR-X6-SFj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B7U-8M-fTb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info Menu with big buttons page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bda-ZO-CwB">
+                                <rect key="frame" x="211" y="90" width="178" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMX-wE-FtB">
+                                <rect key="frame" x="99" y="213" width="90" height="43"/>
+                                <state key="normal" title="Button 1"/>
+                                <connections>
+                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="mRj-3S-2Tn"/>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="syK-EQ-n6l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyG-Sg-kh2">
+                                <rect key="frame" x="362" y="213" width="90" height="43"/>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="yZf-ga-kVC"/>
+                                    <action selector="secondInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="FB3-YT-ZIc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-w9-jk6">
+                                <rect key="frame" x="99" y="403" width="90" height="43"/>
+                                <state key="normal" title="Button 3"/>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="FfS-Ya-VLG"/>
+                                    <action selector="thirdInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="RK3-ne-b2H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-Df-hqk">
+                                <rect key="frame" x="362" y="403" width="90" height="43"/>
+                                <state key="normal" title="Button 4"/>
+                                <connections>
+                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="rKy-Ni-WQG"/>
+                                    <action selector="fourthInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="cXn-xc-2yG"/>
+                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="SDb-fc-Ob9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Scc-WZ-OU1">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="44j-KR-cFA">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hwB-Gv-5sQ">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="fVQ-JP-TaO"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ar-QR-yJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="512"/>
+        </scene>
+        <!--Interactive Detail View Controller-->
+        <scene sceneID="1HD-3G-hPc">
+            <objects>
+                <viewController id="9V8-ec-aKf" customClass="InteractiveDetailViewController" customModule="LowKey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5vl-ee-P30"/>
+                        <viewControllerLayoutGuide type="bottom" id="UPg-Dc-GzC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="orJ-PV-xxT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interactive Detail page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzl-YR-He6">
+                                <rect key="frame" x="227" y="260" width="147" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CGB-eY-iLp">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="XrS-8j-Wab">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oyL-BW-WdD">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="9V8-ec-aKf" eventType="touchUpInside" id="uQj-yk-6Vy"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84h-hk-u7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="1223"/>
+        </scene>
+        <!--Info Detail View Controller-->
+        <scene sceneID="wTN-TF-nLi">
+            <objects>
+                <viewController id="pnv-r5-VNc" customClass="InfoDetailViewController" customModule="LowKey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xqe-mm-nLo"/>
+                        <viewControllerLayoutGuide type="bottom" id="wCx-Uh-NwU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="krH-Iq-1fO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info Detail page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcu-g5-rsa">
+                                <rect key="frame" x="229" y="260" width="142" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ohw-X7-X1j">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="mej-3M-u93">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xb1-ae-WRp">
+                                <rect key="frame" x="20" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backPressed:" destination="pnv-r5-VNc" eventType="touchUpInside" id="2qV-hc-y9n"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2n-5Z-nMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100" y="512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dO5-2S-pN7">
+            <objects>
+                <navigationController storyboardIdentifier="infoMenu" automaticallyAdjustsScrollViewInsets="NO" id="bqv-fY-ciO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cdv-RJ-qXx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eYh-Dy-HUg" kind="relationship" relationship="rootViewController" id="Rnp-8I-wMN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdT-JX-mmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7aW-AV-VSS">
+            <objects>
+                <navigationController storyboardIdentifier="infoDetail" automaticallyAdjustsScrollViewInsets="NO" id="bTT-sn-gzz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RCO-sQ-pQs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pnv-r5-VNc" kind="relationship" relationship="rootViewController" id="Wm9-78-nPp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Omd-7Q-lqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2419" y="512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3dV-Ew-Aae">
+            <objects>
+                <navigationController storyboardIdentifier="interactiveMenu" automaticallyAdjustsScrollViewInsets="NO" id="cKH-Bk-SMr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NHc-0Z-QhH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pYn-o0-Al5" kind="relationship" relationship="rootViewController" id="uIw-4O-lx4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0k5-GQ-o2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="1223"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="usD-Mb-uLh">
+            <objects>
+                <navigationController storyboardIdentifier="interactiveDetail" automaticallyAdjustsScrollViewInsets="NO" id="SSZ-z3-0G7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2TU-qm-DEh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9V8-ec-aKf" kind="relationship" relationship="rootViewController" id="g9Z-eD-fyA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJC-uf-YFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="1223"/>
         </scene>
     </scenes>
 </document>

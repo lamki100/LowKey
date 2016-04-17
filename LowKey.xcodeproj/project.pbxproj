@@ -13,6 +13,10 @@
 		9E947D421CC44BA90031CBAB /* LowKey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E947D401CC44BA90031CBAB /* LowKey.xcdatamodeld */; };
 		9E947D441CC44BA90031CBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E947D431CC44BA90031CBAB /* Assets.xcassets */; };
 		9E947D471CC44BA90031CBAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E947D451CC44BA90031CBAB /* LaunchScreen.storyboard */; };
+		9E947D501CC44CBE0031CBAB /* InfoMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E947D4F1CC44CBE0031CBAB /* InfoMenuViewController.swift */; };
+		9E947D521CC44CEB0031CBAB /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E947D511CC44CEB0031CBAB /* InfoDetailViewController.swift */; };
+		9E947D541CC44D100031CBAB /* InteractiveMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E947D531CC44D100031CBAB /* InteractiveMenuViewController.swift */; };
+		9E947D561CC44D350031CBAB /* InteractiveDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E947D551CC44D350031CBAB /* InteractiveDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9E947D431CC44BA90031CBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E947D461CC44BA90031CBAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E947D481CC44BA90031CBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E947D4F1CC44CBE0031CBAB /* InfoMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoMenuViewController.swift; sourceTree = "<group>"; };
+		9E947D511CC44CEB0031CBAB /* InfoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
+		9E947D531CC44D100031CBAB /* InteractiveMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveMenuViewController.swift; sourceTree = "<group>"; };
+		9E947D551CC44D350031CBAB /* InteractiveDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9E947D391CC44BA90031CBAB /* AppDelegate.swift */,
-				9E947D3B1CC44BA90031CBAB /* ViewController.swift */,
+				9E947D4E1CC44C700031CBAB /* ViewControllers */,
 				9E947D3D1CC44BA90031CBAB /* Main.storyboard */,
 				9E947D431CC44BA90031CBAB /* Assets.xcassets */,
 				9E947D451CC44BA90031CBAB /* LaunchScreen.storyboard */,
@@ -65,6 +73,18 @@
 				9E947D401CC44BA90031CBAB /* LowKey.xcdatamodeld */,
 			);
 			path = LowKey;
+			sourceTree = "<group>";
+		};
+		9E947D4E1CC44C700031CBAB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E947D3B1CC44BA90031CBAB /* ViewController.swift */,
+				9E947D4F1CC44CBE0031CBAB /* InfoMenuViewController.swift */,
+				9E947D511CC44CEB0031CBAB /* InfoDetailViewController.swift */,
+				9E947D531CC44D100031CBAB /* InteractiveMenuViewController.swift */,
+				9E947D551CC44D350031CBAB /* InteractiveDetailViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E947D541CC44D100031CBAB /* InteractiveMenuViewController.swift in Sources */,
 				9E947D3C1CC44BA90031CBAB /* ViewController.swift in Sources */,
+				9E947D561CC44D350031CBAB /* InteractiveDetailViewController.swift in Sources */,
 				9E947D3A1CC44BA90031CBAB /* AppDelegate.swift in Sources */,
+				9E947D521CC44CEB0031CBAB /* InfoDetailViewController.swift in Sources */,
 				9E947D421CC44BA90031CBAB /* LowKey.xcdatamodeld in Sources */,
+				9E947D501CC44CBE0031CBAB /* InfoMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
