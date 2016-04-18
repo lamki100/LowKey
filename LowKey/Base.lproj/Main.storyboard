@@ -68,41 +68,36 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rH-Rv-xfw">
-                                <rect key="frame" x="116" y="210" width="90" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ll-8T-V39">
+                                <rect key="frame" x="88" y="224" width="130" height="30"/>
                                 <state key="normal" title="Button 1"/>
                                 <connections>
-                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="y41-1A-yUJ"/>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="jSw-Qn-DY5"/>
-                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="HIM-pV-ivc"/>
+                                    <action selector="topLeftInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="bJ2-Yj-bYV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTP-ec-hZr">
-                                <rect key="frame" x="394" y="210" width="90" height="43"/>
-                                <state key="normal" title="Button 2"/>
-                                <connections>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="ykp-HM-s77"/>
-                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="RZ7-Ba-YN6"/>
-                                    <action selector="secondInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="oFO-E6-KmB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-kJ-5XS">
-                                <rect key="frame" x="394" y="413" width="90" height="43"/>
-                                <state key="normal" title="Button 4"/>
-                                <connections>
-                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="bKs-xP-nq0"/>
-                                    <action selector="fourthInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="Uv2-cH-aOl"/>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="h2B-Py-wJ2"/>
-                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="Bgy-n5-f3H"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A98-x6-bVx">
-                                <rect key="frame" x="116" y="413" width="90" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-5E-7Gn">
+                                <rect key="frame" x="88" y="413" width="130" height="30"/>
                                 <state key="normal" title="Button 3"/>
                                 <connections>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="x40-xh-XUn"/>
-                                    <action selector="interactiveButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="TMA-tF-NTN"/>
-                                    <action selector="thirdInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="38u-8C-gLK"/>
+                                    <action selector="bottomLeftInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="8Ng-i6-aK2"/>
+                                    <action selector="topLeftInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="bZB-Ff-Tyr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4F-Cm-BFa">
+                                <rect key="frame" x="348" y="224" width="130" height="30"/>
+                                <state key="normal" title="Button 2"/>
+                                <connections>
+                                    <action selector="topLeftInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="WXE-ks-aX2"/>
+                                    <action selector="topRightInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="jie-n1-pHu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-dE-uSs">
+                                <rect key="frame" x="348" y="413" width="130" height="30"/>
+                                <state key="normal" title="Button 4"/>
+                                <connections>
+                                    <action selector="bottomRightInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="ZhF-ij-GLP"/>
+                                    <action selector="topLeftInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="Jje-6y-KAe"/>
+                                    <action selector="topRightInfoButtonPressed:" destination="pYn-o0-Al5" eventType="touchUpInside" id="67q-uR-5oi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -143,37 +138,32 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMX-wE-FtB">
-                                <rect key="frame" x="99" y="213" width="90" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-ZF-nEP">
+                                <rect key="frame" x="105" y="247" width="95" height="30"/>
                                 <state key="normal" title="Button 1"/>
                                 <connections>
-                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="mRj-3S-2Tn"/>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="syK-EQ-n6l"/>
+                                    <action selector="topLeftInfoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="SPJ-rI-XEg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PyG-Sg-kh2">
-                                <rect key="frame" x="362" y="213" width="90" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isb-na-yQX">
+                                <rect key="frame" x="374" y="247" width="95" height="30"/>
                                 <state key="normal" title="Button 2"/>
                                 <connections>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="yZf-ga-kVC"/>
-                                    <action selector="secondInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="FB3-YT-ZIc"/>
+                                    <action selector="topRightInfoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="0ll-gY-3hZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fh-w9-jk6">
-                                <rect key="frame" x="99" y="403" width="90" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPn-ql-QaX">
+                                <rect key="frame" x="105" y="424" width="95" height="30"/>
                                 <state key="normal" title="Button 3"/>
                                 <connections>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="FfS-Ya-VLG"/>
-                                    <action selector="thirdInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="RK3-ne-b2H"/>
+                                    <action selector="bottomLeftInfoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="bI4-kJ-O3R"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-Df-hqk">
-                                <rect key="frame" x="362" y="403" width="90" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iu-dP-pjz">
+                                <rect key="frame" x="374" y="424" width="95" height="30"/>
                                 <state key="normal" title="Button 4"/>
                                 <connections>
-                                    <action selector="firstInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="rKy-Ni-WQG"/>
-                                    <action selector="fourthInfoPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="cXn-xc-2yG"/>
-                                    <action selector="infoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="SDb-fc-Ob9"/>
+                                    <action selector="bottomRightInfoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="Y2F-W1-axH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -293,7 +283,7 @@
         <!--Navigation Controller-->
         <scene sceneID="7aW-AV-VSS">
             <objects>
-                <navigationController storyboardIdentifier="infoDetail" automaticallyAdjustsScrollViewInsets="NO" id="bTT-sn-gzz" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="info_detail" automaticallyAdjustsScrollViewInsets="NO" id="bTT-sn-gzz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RCO-sQ-pQs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -329,7 +319,7 @@
         <!--Navigation Controller-->
         <scene sceneID="usD-Mb-uLh">
             <objects>
-                <navigationController storyboardIdentifier="interactiveDetail" automaticallyAdjustsScrollViewInsets="NO" id="SSZ-z3-0G7" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="interactive_detail" automaticallyAdjustsScrollViewInsets="NO" id="SSZ-z3-0G7" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2TU-qm-DEh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

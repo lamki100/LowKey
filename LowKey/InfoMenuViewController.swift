@@ -24,8 +24,12 @@ class InfoMenuViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    @IBAction func infoButtonPressed(sender: AnyObject) {
-        let navVC = storyboard!.instantiateViewControllerWithIdentifier("infoDetail") as! UINavigationController
+//    @IBAction func infoButtonPressed(sender: AnyObject) {
+//    }
+    
+    @IBAction func topLeftInfoButtonPressed(sender: AnyObject) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let navVC = storyBoard.instantiateViewControllerWithIdentifier("info_detail") as! UINavigationController
         let detailVC = navVC.viewControllers[0] as! InfoDetailViewController
         
         let curButtonPressed = sender as! UIButton
@@ -33,4 +37,38 @@ class InfoMenuViewController: UIViewController {
         
         self.presentViewController(navVC, animated: true, completion: nil)
     }
+    
+    @IBAction func bottomLeftInfoButtonPressed(sender: AnyObject) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let navVC = storyBoard.instantiateViewControllerWithIdentifier("info_detail") as! UINavigationController
+        let detailVC = navVC.viewControllers[0] as! InfoDetailViewController
+        
+        let curButtonPressed = sender as! UIButton
+        detailVC.curInfo = curButtonPressed.titleLabel!.text!
+        
+        self.presentViewController(navVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func topRightInfoButtonPressed(sender: AnyObject) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let navVC = storyBoard.instantiateViewControllerWithIdentifier("info_detail") as! UINavigationController
+        let detailVC = navVC.viewControllers[0] as! InfoDetailViewController
+        
+        let curButtonPressed = sender as! UIButton
+        detailVC.curInfo = curButtonPressed.titleLabel!.text!
+        
+        self.presentViewController(navVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func bottomRightInfoButtonPressed(sender: AnyObject) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let navVC = storyBoard.instantiateViewControllerWithIdentifier("info_detail") as! UINavigationController
+        let detailVC = navVC.viewControllers[0] as! InfoDetailViewController
+        
+        let curButtonPressed = sender as! UIButton
+        detailVC.curInfo = curButtonPressed.titleLabel!.text!
+        
+        self.presentViewController(navVC, animated: true, completion: nil)
+    }
+    
 }
