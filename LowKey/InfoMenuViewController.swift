@@ -10,8 +10,13 @@ import UIKit
 
 class InfoMenuViewController: UIViewController {
     
+    @IBOutlet weak var guidedButton: UIButton! //for text align center in viewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        guidedButton.titleLabel?.textAlignment = NSTextAlignment.Center
         // Do any additional setup after loading the view, typically from a nib.
     }
     

@@ -219,13 +219,10 @@
                                     <action selector="topLeftInfoButtonPressed:" destination="eYh-Dy-HUg" eventType="touchUpInside" id="SPJ-rI-XEg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isb-na-yQX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="isb-na-yQX">
                                 <rect key="frame" x="440" y="230" width="131" height="125"/>
                                 <color key="backgroundColor" red="0.2901960784" green="0.51372549020000002" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="131" id="2kU-Xy-njf"/>
-                                    <constraint firstAttribute="height" constant="125" id="QUI-7E-561"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Guided Visualization">
                                     <color key="titleColor" red="0.81960784310000001" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,23 +265,22 @@
                         <color key="backgroundColor" red="0.90196078430000004" green="1" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bda-ZO-CwB" firstAttribute="centerX" secondItem="B7U-8M-fTb" secondAttribute="centerX" id="2HS-ho-6Ov"/>
-                            <constraint firstItem="nQh-ZF-nEP" firstAttribute="firstBaseline" secondItem="isb-na-yQX" secondAttribute="baseline" id="46g-QJ-j31"/>
                             <constraint firstItem="hPn-ql-QaX" firstAttribute="leading" secondItem="nQh-ZF-nEP" secondAttribute="leading" id="6Ne-8c-lmF"/>
                             <constraint firstItem="nQh-ZF-nEP" firstAttribute="leading" secondItem="B7U-8M-fTb" secondAttribute="leadingMargin" constant="10" id="6Ol-y1-4sx"/>
                             <constraint firstItem="hPn-ql-QaX" firstAttribute="firstBaseline" secondItem="6iu-dP-pjz" secondAttribute="baseline" id="8fd-MF-ftQ"/>
-                            <constraint firstItem="6iu-dP-pjz" firstAttribute="top" secondItem="isb-na-yQX" secondAttribute="bottom" constant="30" id="D97-b2-Bpe"/>
                             <constraint firstItem="hPn-ql-QaX" firstAttribute="leading" secondItem="B7U-8M-fTb" secondAttribute="leadingMargin" constant="133" id="I8a-3J-us3"/>
                             <constraint firstItem="hPn-ql-QaX" firstAttribute="top" secondItem="6iu-dP-pjz" secondAttribute="top" id="KBC-on-9UR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6iu-dP-pjz" secondAttribute="trailing" constant="130" id="Mab-n5-1dx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6iu-dP-pjz" secondAttribute="trailing" constant="9" id="NVI-ev-x6O"/>
                             <constraint firstItem="hPn-ql-QaX" firstAttribute="baseline" secondItem="6iu-dP-pjz" secondAttribute="firstBaseline" id="Sqh-M7-esa"/>
-                            <constraint firstItem="isb-na-yQX" firstAttribute="top" secondItem="Nhq-5P-HfU" secondAttribute="bottom" constant="166" id="SrB-Ff-g4r"/>
+                            <constraint firstItem="6iu-dP-pjz" firstAttribute="top" secondItem="isb-na-yQX" secondAttribute="bottom" constant="30" id="Swz-zd-SCe"/>
                             <constraint firstItem="bda-ZO-CwB" firstAttribute="top" secondItem="Nhq-5P-HfU" secondAttribute="bottom" constant="38" id="Tgb-IJ-3Rp"/>
                             <constraint firstItem="hPn-ql-QaX" firstAttribute="trailing" secondItem="nQh-ZF-nEP" secondAttribute="trailing" id="Uim-4b-atH"/>
-                            <constraint firstItem="isb-na-yQX" firstAttribute="trailing" secondItem="6iu-dP-pjz" secondAttribute="trailing" id="aGt-Eo-6ya"/>
-                            <constraint firstItem="isb-na-yQX" firstAttribute="leading" secondItem="6iu-dP-pjz" secondAttribute="leading" id="bIz-SF-ngT"/>
-                            <constraint firstItem="nQh-ZF-nEP" firstAttribute="baseline" secondItem="isb-na-yQX" secondAttribute="firstBaseline" id="eA4-ye-Fcy"/>
-                            <constraint firstItem="nQh-ZF-nEP" firstAttribute="top" secondItem="isb-na-yQX" secondAttribute="top" id="hno-3m-MUJ"/>
+                            <constraint firstItem="isb-na-yQX" firstAttribute="trailing" secondItem="6iu-dP-pjz" secondAttribute="trailing" id="WBG-2W-fK2"/>
+                            <constraint firstItem="isb-na-yQX" firstAttribute="top" secondItem="Nhq-5P-HfU" secondAttribute="bottom" constant="166" id="ZD4-lK-vLI"/>
+                            <constraint firstItem="isb-na-yQX" firstAttribute="top" secondItem="nQh-ZF-nEP" secondAttribute="top" id="b5Z-gL-mf5"/>
+                            <constraint firstItem="isb-na-yQX" firstAttribute="leading" secondItem="6iu-dP-pjz" secondAttribute="leading" id="bu6-6J-Gqf"/>
+                            <constraint firstItem="isb-na-yQX" firstAttribute="bottom" secondItem="nQh-ZF-nEP" secondAttribute="bottom" id="gdp-w7-4Zn"/>
                             <constraint firstItem="nQh-ZF-nEP" firstAttribute="leading" secondItem="B7U-8M-fTb" secondAttribute="leadingMargin" constant="133" id="x9r-SO-0xQ"/>
                         </constraints>
                         <variation key="default">
@@ -307,6 +303,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="guidedButton" destination="isb-na-yQX" id="Lt2-xR-j0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ar-QR-yJN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
