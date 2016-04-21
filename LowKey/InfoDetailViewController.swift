@@ -49,7 +49,7 @@ class InfoDetailViewController: UIViewController {
             break;
         case "Guided Visualization":
             nameLabel.text! = curInfo
-            descripLabel.text! = "This is a meditation technique that involves visualizing yourself in a calm, happy environment. The more you can picture yourself in this state, the more relaxed you will feel. Choose a place where you feel most at peace. Find a comfortable spot to relax and visualize this place. Take slow, deep breaths. You can play music in the background if it helps you in your visualization."
+            descripLabel.text! = "\tThis is a meditation technique that involves visualizing yourself in a calm, happy environment. The more you can picture yourself in this state, the more relaxed you will feel. Choose a place where you feel most at peace. Find a comfortable spot to relax and visualize this place. Take slow, deep breaths. You can play music in the background if it helps you in your visualization."
             infoImage.image = UIImage(named: "meditation")
             break;
         
