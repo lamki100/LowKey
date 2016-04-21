@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3i-5E-7Gn">
-                                <rect key="frame" x="85" y="367.5" width="130" height="125"/>
+                                <rect key="frame" x="85" y="368" width="130" height="125"/>
                                 <color key="backgroundColor" red="0.29019607843137252" green="0.51372549019607838" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Oay-j3-Sdj"/>
@@ -194,12 +194,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Info Menu with big buttons page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bda-ZO-CwB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Advice" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bda-ZO-CwB">
                                 <rect key="frame" x="211" y="102" width="178" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="178" id="63r-Vm-Wad"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="29"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -212,7 +212,7 @@
                                     <constraint firstAttribute="width" constant="130" id="rFr-51-N1h"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button 1">
+                                <state key="normal" title="4, 7, 8">
                                     <color key="titleColor" red="0.81960784310000001" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -227,7 +227,7 @@
                                     <constraint firstAttribute="height" constant="125" id="QUI-7E-561"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button 2">
+                                <state key="normal" title="Guided Visualization">
                                     <color key="titleColor" red="0.81960784310000001" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -242,7 +242,7 @@
                                     <constraint firstAttribute="width" constant="130" id="cq5-aT-dS4"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button 3">
+                                <state key="normal" title="Make a List">
                                     <color key="titleColor" red="0.81960784310000001" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -257,7 +257,7 @@
                                     <constraint firstAttribute="height" constant="125" id="vEY-ms-JdB"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button 4">
+                                <state key="normal" title="Find a Hobby">
                                     <color key="titleColor" red="0.81960784310000001" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -362,14 +362,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info Detail page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcu-g5-rsa">
-                                <rect key="frame" x="229" y="260" width="142" height="79"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info Detail page" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tcu-g5-rsa">
+                                <rect key="frame" x="20" y="217" width="363" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="363" id="BQP-uK-aXa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="22"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.51372549019607838" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bc0-w7-f2X">
+                                <rect key="frame" x="38" y="287" width="537" height="313"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GeK-RW-Ztc">
+                                <rect key="frame" x="218" y="79" width="177" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="uEk-fA-Mof"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wCx-Uh-NwU" firstAttribute="top" secondItem="Tcu-g5-rsa" secondAttribute="bottom" constant="304" id="4SZ-lb-8ed"/>
+                            <constraint firstItem="Bc0-w7-f2X" firstAttribute="top" secondItem="GeK-RW-Ztc" secondAttribute="bottom" constant="34" id="9Y2-ud-RDV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bc0-w7-f2X" secondAttribute="trailing" constant="5" id="Qtb-lz-tct"/>
+                            <constraint firstItem="Tcu-g5-rsa" firstAttribute="top" secondItem="xqe-mm-nLo" secondAttribute="bottom" constant="153" id="RKQ-iN-8Oc"/>
+                            <constraint firstItem="GeK-RW-Ztc" firstAttribute="centerX" secondItem="Bc0-w7-f2X" secondAttribute="centerX" id="Wa8-Rb-kEm"/>
+                            <constraint firstItem="Bc0-w7-f2X" firstAttribute="top" secondItem="xqe-mm-nLo" secondAttribute="bottom" constant="223" id="bDw-bE-b8I"/>
+                            <constraint firstItem="GeK-RW-Ztc" firstAttribute="top" secondItem="xqe-mm-nLo" secondAttribute="bottom" constant="15" id="gM1-Ou-c7r"/>
+                            <constraint firstItem="Bc0-w7-f2X" firstAttribute="leading" secondItem="krH-Iq-1fO" secondAttribute="leadingMargin" constant="18" id="iaB-HC-Y0O"/>
+                            <constraint firstItem="Bc0-w7-f2X" firstAttribute="bottom" secondItem="wCx-Uh-NwU" secondAttribute="top" id="izl-Go-ayc"/>
+                            <constraint firstItem="Tcu-g5-rsa" firstAttribute="leading" secondItem="krH-Iq-1fO" secondAttribute="leadingMargin" id="vaK-Az-0H0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ohw-X7-X1j">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="mej-3M-u93">
@@ -383,6 +410,11 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descripLabel" destination="Bc0-w7-f2X" id="S8R-dw-IYE"/>
+                        <outlet property="infoImage" destination="GeK-RW-Ztc" id="mie-AF-BAM"/>
+                        <outlet property="nameLabel" destination="Tcu-g5-rsa" id="3q6-6O-auG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2n-5Z-nMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
